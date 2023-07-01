@@ -1,1 +1,4 @@
 /Screenshot (431).png
+
+# local env files
+.env*
