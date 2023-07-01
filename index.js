@@ -5,17 +5,28 @@ const CronJob = require("cron").CronJob;
 
 const tweet = async ()=>{
     try {
-
-        await rwClient.v2.tweet("its 11:40am! Good Morning and have a very productive day!")
+        await rwClient.v2.tweet("its 11:40am! Good Morning! and have a very productive day!")
         console.log("tweeted!")
     } catch (error) {
         console.error(error)
     }
 }
+const btweet = async ()=>{
+    try {
+        await rwClient.v2.tweet("Yooo its 7:00am Nigerian time! Good Morning @Aguda__David @ayomibaby @bimpeayorinde and have a very productive day! God Bless You!")
+    } catch (error) {
+        console.error(error)
+    }
+}
+
 
 const job = new CronJob("40 11 * * *", ()=>{
-    console.log("cron job is working")
     tweet()
 })
+const bjob = new CronJob("00 7 * * *", ()=>{
+    btweet()
+})
+
 job.start();
+bjob.start()
 // tweet()
