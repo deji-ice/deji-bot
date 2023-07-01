@@ -13,7 +13,7 @@ const tweet = async ()=>{
 }
 const btweet = async ()=>{
     try {
-        await rwClient.v2.tweet("Yooo its 7:00am Nigerian time! Good Morning @Aguda__David @ayomibaby @bimpeayorinde and have a very productive day! God Bless You!")
+        await rwClient.v2.tweet("Yoo its 7:00am Nigerian time! Good Morning @Aguda__David @ayomibaby @bimpeayorinde and have a very productive day! God Bless You!")
     } catch (error) {
         console.error(error)
     }
