@@ -13,7 +13,7 @@ const tweet = async ()=>{
 }
 const btweet = async ()=>{
     try {
-        await rwClient.v2.tweet("Yoo its 7:00am Nigerian time! Good Morning @Aguda__David @ayomibaby @bimpeayorinde and have a very productive day! God Bless You!")
+        await rwClient.v2.tweet("Yoo its 10:00am Nigerian time!(hopefully it's right this time lol) Good Morning @Aguda__David @ayomibaby @bimpeayorinde and have a very productive day! God Bless You!")
     } catch (error) {
         console.error(error)
     }
@@ -23,7 +23,7 @@ const btweet = async ()=>{
 const job = new CronJob("40 11 * * *", ()=>{
     tweet()
 })
-const bjob = new CronJob("00 7 * * *", ()=>{
+const bjob = new CronJob("00 10 * * *", ()=>{
     btweet()
 })
 
