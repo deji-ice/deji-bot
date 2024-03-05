@@ -1,5 +1,5 @@
-const {TwitterApi} = require("twitter-api-v2");
 
+import { TwitterApi} from "twitter-api-v2";
 //clentSecret = 0p9wnpOjLn__27_4-vFMOlhmjBehvVTXVz5lP4csdulEpBfbqQ
 //clientId= TVhycWN3UERzbmhmbmVLZ0k2c2c6MTpjaQ
 const client = new TwitterApi({
@@ -11,4 +11,4 @@ const client = new TwitterApi({
 
 const rwClient =  client.readWrite
 
-module.exports = rwClient
+export default rwClient

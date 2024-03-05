@@ -1,5 +1,5 @@
-/Screenshot (431).png
 
 # Ignore .env file
 .env
 .vercel
+node_modules
